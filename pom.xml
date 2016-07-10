@@ -2,7 +2,14 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>myUtilsAndroid</groupId>
   <artifactId>myUtilsAndroid</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <!-- 存放安卓手机上独有的一些工具 -->
+  <parent>
+	<groupId>utils.tingfeng</groupId>
+	<artifactId>myUtilsJavaAndAndroid</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<relativePath>../myUtilsJavaAndAndroid/pom.xml</relativePath>
+  </parent>
+  
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -27,5 +34,11 @@
 		    <artifactId>android</artifactId>
 		    <version>4.1.1.4</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.android/support-v4 -->
+	<dependency>
+	    <groupId>com.google.android</groupId>
+	    <artifactId>support-v4</artifactId>
+	    <version>r7</version>
+	</dependency>
   </dependencies>  
 </project>
